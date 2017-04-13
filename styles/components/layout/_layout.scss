@@ -1,0 +1,12 @@
+@mixin base() {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.layout {
+    @include base;
+
+    @import "column-4";
+    @import "column-8";
+}

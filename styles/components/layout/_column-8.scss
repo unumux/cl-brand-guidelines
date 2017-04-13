@@ -1,0 +1,9 @@
+@mixin base() {
+    flex-basis: 75%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+&__column-8 {
+    @include base;
+}
