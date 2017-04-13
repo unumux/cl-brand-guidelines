@@ -1,28 +1,28 @@
 @mixin base() {
-    flex-grow: 0;
-    margin-right: space(2);
-    
-    &:last-child {
-        margin-right: 0;
-    }
+
 }
 
 &__column {
     @include base;
 
 
-    &--4 {
+    &--1 {
         @include base;
 
-        flex-basis: 25%;
-        flex-shrink: 0;
+        grid-column: 1 / 13;
+
+        @media screen and (min-width: 900px) {
+            grid-column: 1 / span 3;
+        }
     }
 
-    &--8 {
+    &--2 {
         @include base;
 
-        flex-basis: 75%; 
-        flex-shrink: 1;
+        grid-column: 1 / 13;
 
+        @media screen and (min-width: 900px) {
+            grid-column: 4 / 13;
+        }
     }
 }
