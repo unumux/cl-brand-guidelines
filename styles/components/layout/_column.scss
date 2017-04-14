@@ -7,8 +7,26 @@
     }
 }
 
+@mixin columnWidth($colWidth) {
+    flex-basis: calc(#{100/$colWidth}% - margin);
+
+    //need to look at gutters and removing first child and last child margins
+}
+
 &__column {
     @include base;
+
+    &--1 {
+        @include columnWidth(12);
+    }
+
+    &--3 {
+        @include columnWidth(10);
+    }
+
+    &--12 {
+        @include columnWidth(1);
+    }
 
 
     &--4 {
