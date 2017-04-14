@@ -1,0 +1,11 @@
+@mixin base() {
+    max-width: 1170px;
+}
+
+&__column {
+    @include base;
+
+    &--12 {
+        @include base;
+    }
+}
