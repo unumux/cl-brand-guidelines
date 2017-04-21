@@ -1,11 +1,22 @@
+$colWidth: (1170 - (11 * space(2))) / 12;
+
+@mixin colWidth($cols) {
+    flex-basis: ($cols * $colWidth) + (($cols - 1)) * space(2);
+}
+
 @mixin base() {
-    max-width: 1170px;
+    margin-left: space(1);
+    margin-right: space(1);
 }
 
 &__column {
     @include base;
 
-    &--12 {
-        @include base;
+    
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            @include base;
+            @include colWidth($i);
+        }
     }
 }
