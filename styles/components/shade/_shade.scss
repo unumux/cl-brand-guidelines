@@ -1,0 +1,26 @@
+@mixin base() {
+    border-radius: .5rem;
+    height: 12rem;
+    padding: 3rem;
+    width: 27rem;
+}
+
+
+.shade {
+    @include base;
+
+    @import "asparagus";
+    @import "charcoal";
+    @import "darkred";
+    @import "grape";
+    @import "leaf";
+    @import "mint";
+    @import "moss";
+    @import "ocean";
+    @import "pewter";
+    @import "pumpkin";
+    @import "sand";
+    @import "slate";
+    @import "steel";
+    @import "tangerine";
+}

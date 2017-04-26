@@ -1,0 +1,44 @@
+@mixin base() {
+    background-color: #3BAECC;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
+}
+
+&__ocean {
+    @include base;
+
+    &--darker {
+        background-color: #0082A4;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--darkest {
+        background-color: #007796;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lighter {
+        background-color: #5BBDD7;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lightest {
+        background-color: #71D0E8;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+}

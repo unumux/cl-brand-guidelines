@@ -1,0 +1,44 @@
+@mixin base() {
+    background-color: #E0832E;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
+}
+
+&__pumpkin {
+    @include base;
+
+    &--darker {
+        background-color: #B85E0A;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--darkest {
+        background-color: #9F4E05;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lighter {
+        background-color: #EB9241;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lightest {
+        background-color: #FFBB7E;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+}

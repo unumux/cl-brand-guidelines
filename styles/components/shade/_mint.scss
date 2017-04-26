@@ -1,0 +1,44 @@
+@mixin base() {
+    background-color: #30AA83;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
+}
+
+&__mint {
+    @include base;
+    
+    &--darker {
+        background-color: #0A865E;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--darkest {
+        background-color: #007F56;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lighter {
+        background-color: #49D7A9;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lightest {
+        background-color: #67DEB8;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+}

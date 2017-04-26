@@ -1,0 +1,44 @@
+@mixin base() {
+    background-color: #A4CC44;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
+}
+
+&__asparagus {
+    @include base;
+
+    &--darker {
+        background-color: #85B907;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--darkest {
+        background-color: #7AAD00;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lighter {
+        background-color: #ADD54B;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--lightest {
+        background-color: #B9E64E;
+        height: 5rem;
+        width: 37rem;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+}

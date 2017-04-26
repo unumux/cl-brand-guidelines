@@ -1,0 +1,16 @@
+@mixin base() {
+    background-color: #688465;
+}
+
+&__moss {
+    @include base;
+
+    &--print {
+        @include base;
+        
+        border-radius: 0rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+}
