@@ -8,7 +8,9 @@
 
             @media screen and (min-width: breakpoint(large)) {
                 // grid-column: span #{$i};
-                flex-basis: $i*(99.999%/12);
+                $width: $i*(100%/12);
+                flex-basis: $width;
+                width: $width;
                 flex-grow: 0;
                 flex-shrink: 0;
                 padding-left: space(1);
