@@ -1,5 +1,9 @@
 @mixin base() {
     background-color: #67A14C;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
 }
 
 &__leaf {
@@ -8,9 +12,17 @@
     &--print {
         @include base;
         
-        border-radius: 0rem;
+        border-radius: 0.2rem;
         height: 10rem;
         width: 17rem;
+    }
+
+    &--reverse {
+        @include base;
+
+        border-radius: 0.4rem;
+        height: 12rem;
+        width: 27rem;
     }
 
 }

@@ -1,16 +1,54 @@
 @mixin base() {
     background-color: #E0DDCE;
+    border-radius: .2rem;
+    height: 10rem;
+    padding: 3rem;
+    width: 37rem;
 }
 
 &__sand {
     @include base;
 
+    &--darkest {
+        @include base;
+
+        border-radius: 0.4rem;
+        height: 6.5rem;
+        width: 7rem;
+    }
+
+    &--lighter {
+        @include base;
+
+        border-radius: 0.4rem;
+        height: 6.5rem;
+        opacity: 0.5;
+        width: 7rem;
+    }
+
+    &--lightest {
+        @include base;
+
+        border-radius: 0.4rem;
+        height: 6.5rem;
+        opacity: 0.3;
+        width: 7rem;
+    }
+
     &--print {
         @include base;
         
-        border-radius: 0rem;
+        border-radius: 0.2rem;
         height: 10rem;
         width: 17rem;
+    }
+
+    &--reverse {
+        @include base;
+
+        border-radius: 0.4rem;
+        height: 12rem;
+        width: 27rem;
     }
 
 }
