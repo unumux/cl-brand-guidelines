@@ -1,0 +1,19 @@
+@mixin base() {
+    // margin-bottom: space(2);
+}
+
+&__row {
+    @include base;
+
+    &--cool {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: breakpoint(large)) {
+        // display: grid;
+        // grid-template-columns: repeat(12, 1fr);
+        // grid-column-gap: space(2);
+        align-items: stretch;
+        display: flex;
+    }
+}
