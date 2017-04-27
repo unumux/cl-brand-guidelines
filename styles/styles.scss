@@ -2,8 +2,17 @@
 
 @import "components/components";
 
+hr {
+    background-color: #DEE5EB;
+    border-style: none;
+    height: 0.4rem;
+}
 
 li {
     list-style-type: none;
     margin: 0;
+}
+
+.logo__border {
+    border: 1px solid #DEE5EB;
 }

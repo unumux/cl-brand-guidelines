@@ -1,0 +1,20 @@
+@mixin base() {
+    background-color: #FFFFFF;
+    border: 0.1rem solid #DEE5EB;
+    border-radius: 0.4rem;
+    height: 12rem;
+    padding: 3rem;
+    width: 29rem;
+}
+
+&__white {
+    @include base;
+
+    &--sub {
+        @include base;
+        
+        border-radius: 0.4rem;
+        height: 11.5rem;
+        width: 29rem;
+    }
+}

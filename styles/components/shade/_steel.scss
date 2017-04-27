@@ -49,4 +49,12 @@
         width: 27rem;
     }
 
+    &--sub {
+        @include base;
+        
+        border-radius: 0.4rem;
+        height: 11.5rem;
+        width: 29rem;
+    }
+
 }
