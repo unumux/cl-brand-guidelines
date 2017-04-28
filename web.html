@@ -7,48 +7,56 @@
     <link rel="stylesheet" href="styles/styles.min.css">
 </head>
 <body>
-    <div class="willow-page">
-        <div class="willow-skip-nav">
-            <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
-        </div>
-        <header class="willow-page-header" role="banner">
-            <div class="willow-page-header__branding">
-                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="../images/logo-one-color.svg" alt=""></a>
-            </div>
-            <div class="willow-page-header__content-controls">
-                <a href="" class="willow-page-header__content-open">Menu</a>
-                <a href="" class="willow-page-header__content-close">close</a>
-                <img src="images/hamburger.svg" alt="">
-            </div>
-            <div class="willow-page-header__content">
-                <div class="willow-page-header__navigation">
-                    <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-                        <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
-                        <ul class="willow-primary-nav__list">
-                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
-                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="web.html">Web</a></li>
-                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="print.html">Print</a></li>
-                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="voicetone.html">Voice + Tone</a></li>
-                        </ul>
-                    </nav>
+    <div class="willow-layout">
+        <div class="willow-layout__row--remove-margin-bottom">
+			<div class="willow-layout__column--12">
+                <div class="willow-skip-nav">
+                    <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
                 </div>
-            </div>
-        </header>
-        <section class="willow-banner" role="region">
-            <h1 class="willow-banner__heading">Web Brand Guidelines</h1>
-            <div class="willow-banner__content">
-                <div class="willow-styling-context">
-                    <p>In the digital space, follow these guidelines for effective and accessible brand communications.</p>
-                </div>                    
-            </div>
-            <ul class="willow-banner__actions">
-                <li class="willow-banner__action">
-                    <a href="/" class="willow-button--primary">Get all web files <img src="images/downloadarrow.svg"></a>
-                </li>
-            </ul>
-        </section>
-        <!--<div class="row">
-            <div class="row__column--3">
+                <header class="willow-page-header" role="banner">
+                    <div class="willow-page-header__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="../images/logo-one-color.svg" alt=""></a>
+                    </div>
+                    <div class="willow-page-header__content-controls">
+                        <a href="" class="willow-page-header__content-open">Menu</a>
+                        <a href="" class="willow-page-header__content-close">close</a>
+                        <img src="images/hamburger.svg" alt="">
+                    </div>
+                    <div class="willow-page-header__content">
+                        <div class="willow-page-header__navigation">
+                            <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
+                                <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+                                <ul class="willow-primary-nav__list">
+                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
+                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="web.html">Web</a></li>
+                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="print.html">Print</a></li>
+                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="voicetone.html">Voice + Tone</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+			</div>
+        </div>
+        <div class="willow-layout__row">
+			<div class="willow-layout__column--12">
+                <section class="willow-banner" role="region">
+                    <h1 class="willow-banner__heading">Web Brand Guidelines</h1>
+                    <div class="willow-banner__content">
+                        <div class="willow-styling-context">
+                            <p>In the digital space, follow these guidelines for effective and accessible brand communications.</p>
+                        </div>                    
+                    </div>
+                    <ul class="willow-banner__actions">
+                        <li class="willow-banner__action">
+                            <a href="/" class="willow-button--primary">Get all web files <img src="images/downloadarrow.svg"></a>
+                        </li>
+                    </ul>
+                </section>
+			</div>
+        </div>
+        <div class="willow-layout__row">
+			<div class="willow-layout__column--3">
                 <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
                     <h1 class="willow-secondary-nav__heading">Secondary Navigation</h1>
                     <ul class="willow-secondary-nav__list">
@@ -59,577 +67,632 @@
                         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#">Photography</a></li>
                     </ul>
                 </nav>
-            </div>-->
-            <div class="row__column--9">
-            <main class="willow-page-content" id="mainContent" role="main">
-                <section class="">
-                    <hr>
-                    <h1>Logo</h1>
-                    <div class="subsection">
-                        <h3>Two Color Logo</h3>
-                        <p>No other color combination may be used.</p>
-                        <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life blue logo">
-                        <caption>Steel Blue / Slate</caption>
-                        <a href="/" class="willow-button">Get two color logos <img src="images/downloadarrowDark.svg"></a>
-                    </div>
-                    <div class="subsection">
-                        <h3>Single Color Logos</h3>
-                        <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
-                        <caption>Steel Blue</caption>
-                        <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
-                        <caption>Black</caption>
-                        <a href="/" class="willow-button">Get one color logos <img src="images/downloadarrowDark.svg"></a>
-                    </div>
-                    <div class="subsection">
-                        <h2>Reversed Over Single Background Color</h2>
-                        <p>Only colors from the primary palette can be used as background for reversed logo (exception: sand).</p>
-                        <div class="subsection__content">
-                            <img class="shade__steel--reverse" src="images/CL-logo-white.svg" alt="">
-                            <img class="shade__slate--reverse" src="images/CL-logo-white.svg" alt="">
-                            <img class="shade__pewter--reverse" src="images/CL-logo-white.svg" alt="">
-                            <img class="shade__moss--reverse" src="images/CL-logo-white.svg" alt="">
-                            <img class="shade__leaf--reverse" src="images/CL-logo-white.svg" alt="">
+            </div>
+            <div class="willow-layout__column--9">
+                <main class="willow-page-content" id="mainContent" role="main">
+                    <section class="category">
+                        <hr>
+                        <h1 class="category__heading">Logo</h1>
+                        <div class="section">
+                            <h2 class="section__heading">Two Color Logo</h2>
+                            <p class="section__description">No other color combination may be used.</p>
+                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life blue logo">
+                            <caption>Steel Blue / Slate</caption>
+                            <a href="/" class="willow-button">Get two color logos <img src="images/downloadarrowDark.svg"></a>
                         </div>
-                        <a href="/" class="willow-button">Get Reversed Logos <img src="images/downloadarrowDark.svg"></a>
-                    </div>
-                    <div class="subsection">
-                        <h3>Sub Brands</h3>
-                        <img class="shade__white--sub" src="images/logo-my-standard.svg" alt="my Colonial Life logo">
-                        <img class="shade__white--sub" src="images/logo-my-propr.svg" alt="my Colonial Life Propr logo">
-                        <img class="shade__steel--sub" src="images/logo-my-ph.svg" alt="my Colonial Life policyholder logo">
-                        <img class="shade__steel--sub" src="images/logo-my-employees.svg" alt="my Colonial Life employees logo">
-                        <img class="shade__steel--sub" src="images/logo-my-brokers.svg" alt="my Colonial Life employees logo">
-                        <img class="shade__steel--sub" src="images/logo-my-expo.svg" alt="my Colonial Life expo logo">
-                        <img class="shade__white--sub" src="images/logo-my-acct-admin.svg" alt="my Account Administration logo">
-                        <a href="/" class="willow-button">Get sub brand logos <img src="images/downloadarrowDark.svg"></a>
-                    </div>
-                    <div class="subsection">
-                        <h3>Improper Logo Color Usage</h3>
-                        <div class="subsection__content">
-                            <img src="images/beige-no-logo.svg" alt="">
-                            <img src="images/red-no-logo.svg" alt="">
-                            <img src="images/purple-no-logo.svg" alt="">
-                            <img src="images/lime-no-logo.svg" alt="">
-                            <img src="images/teal-no-logo.svg" alt="">
-                            <img src="images/orange-no-logo.svg" alt="">
-                            <img src="images/blue-no-logo.svg" alt="">
-                            <img src="images/yellow-no-logo.svg" alt="">
+                        <div class="section">
+                            <h2 class="section__heading">Single Color Logos</h2>
+                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
+                            <caption>Steel Blue</caption>
+                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
+                            <caption>Black</caption>
+                            <a href="/" class="willow-button">Get one color logos <img src="images/downloadarrowDark.svg"></a>
+                        </div>
+                        <div class="section">
+                            <h2 class="section__heading">Reversed Over Single Background Color</h2>
+                            <p class="section__description">Only colors from the primary palette can be used as background for reversed logo (exception: sand).</p>
+                            <div class="section__content">
+                                <img class="shade__steel--reverse" src="images/CL-logo-white.svg" alt="">
+                                <img class="shade__slate--reverse" src="images/CL-logo-white.svg" alt="">
+                                <img class="shade__pewter--reverse" src="images/CL-logo-white.svg" alt="">
+                                <img class="shade__moss--reverse" src="images/CL-logo-white.svg" alt="">
+                                <img class="shade__leaf--reverse" src="images/CL-logo-white.svg" alt="">
+                            </div>
+                            <a href="/" class="willow-button">Get Reversed Logos <img src="images/downloadarrowDark.svg"></a>
+                        </div>
+                        <div class="section">
+                            <h2 class="section__heading">Sub Brands</h2>
+                            <div class="section__content">
+                                <img class="shade__white--sub" src="images/logo-my-standard.svg" alt="my Colonial Life logo">
+                                <img class="shade__white--sub" src="images/logo-my-propr.svg" alt="my Colonial Life Propr logo">
+                                <img class="shade__steel--sub" src="images/logo-my-ph.svg" alt="my Colonial Life policyholder logo">
+                                <img class="shade__steel--sub" src="images/logo-my-employees.svg" alt="my Colonial Life employees logo">
+                                <img class="shade__steel--sub" src="images/logo-my-brokers.svg" alt="my Colonial Life employees logo">
+                                <img class="shade__steel--sub" src="images/logo-my-expo.svg" alt="my Colonial Life expo logo">
+                                <img class="shade__white--sub" src="images/logo-my-acct-admin.svg" alt="my Account Administration logo">
+                            </div>
+                            <a href="/" class="willow-button">Get sub brand logos <img src="images/downloadarrowDark.svg"></a>
+                        </div>
+                        <div class="section">
+                            <h2 class="section__heading">Improper Logo Color Usage</h2>
+                            <div class="section__content">
+                                <img src="images/beige-no-logo.svg" alt="">
+                                <img src="images/red-no-logo.svg" alt="">
+                                <img src="images/purple-no-logo.svg" alt="">
+                                <img src="images/lime-no-logo.svg" alt="">
+                                <img src="images/teal-no-logo.svg" alt="">
+                                <img src="images/orange-no-logo.svg" alt="">
+                                <img src="images/blue-no-logo.svg" alt="">
+                                <img src="images/yellow-no-logo.svg" alt="">
 
-                            <img src="images/lightgray-no-white.svg" alt="">
-                            <img src="images/darkgray-no-white.svg" alt="">
-                            <img src="images/moss-no-white.svg" alt="">
-                            <img src="images/happygreen-no-white.svg" alt="">
-                            <img src="images/beige-no-white.svg" alt="">
-                            <img src="images/red-no-white.svg" alt="">
-                            <img src="images/purple-no-white.svg" alt="">
-                            <img src="images/orange-no-white.svg" alt="">
-                            <img src="images/blue-no-white.svg" alt="">
-                            <img src="images/lime-no-white.svg" alt="">
-                            <img src="images/teal-no-white.svg" alt="">
-                            <img src="images/yellow-no-white.svg" alt="">
-                        
-                        </div>
-                    </div>
-                </section>
-                <section class="">
-                    <hr>
-                    <h1>Color Palette</h1>
-                    <div class="color">
-                        <h3>Primary</h3>
-                        <div class="color__base shade__steel">
-                            <div class="color__heading">
-                                <h6>Steel Blue</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#265B80</p>
+                                <img src="images/lightgray-no-white.svg" alt="">
+                                <img src="images/darkgray-no-white.svg" alt="">
+                                <img src="images/moss-no-white.svg" alt="">
+                                <img src="images/happygreen-no-white.svg" alt="">
+                                <img src="images/beige-no-white.svg" alt="">
+                                <img src="images/red-no-white.svg" alt="">
+                                <img src="images/purple-no-white.svg" alt="">
+                                <img src="images/orange-no-white.svg" alt="">
+                                <img src="images/blue-no-white.svg" alt="">
+                                <img src="images/lime-no-white.svg" alt="">
+                                <img src="images/teal-no-white.svg" alt="">
+                                <img src="images/yellow-no-white.svg" alt="">
+                            
                             </div>
                         </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__steel--darkest">
+                    </section>
+                    <section class="category">
+                        <hr>
+                        <h1 class="category__heading">Color Palette</h1>
+                        <div class="color">
+                            <h2>Primary</h2>
+                            <div class="color__base shade__steel">
+                                <div class="color__heading">
+                                    <h3>Steel Blue</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#265B80</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__steel--darkest"></div>
+                                <div class="color__swatch shade__steel--darker"></div>
+                                <div class="color__swatch shade__steel--lighter"></div>
+                                <div class="color__swatch shade__steel--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__slate">
+                                <div class="color__heading">
+                                    <h3>Slate</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#5B7183</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__slate--darkest"></div>
+                                <div class="color__swatch shade__slate--darker"></div>
+                                <div class="color__swatch shade__slate--lighter"></div>
+                                <div class="color__swatch shade__slate--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <h2>Accent</h2>
+                            <div class="color__base shade__tangerine">
+                                <div class="color__heading">
+                                    <h3>Tangerine</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#7F2725</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__tangerine--darkest"></div>
+                                <div class="color__swatch shade__tangerine--darker"></div>
+                                <div class="color__swatch shade__tangerine--lighter"></div>
+                                <div class="color__swatch shade__tangerine--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__grape">
+                                <div class="color__heading">
+                                    <h3>Grape</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#5F3A6C</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__grape--darkest"></div>
+                                <div class="color__swatch shade__grape--darker"></div>
+                                <div class="color__swatch shade__grape--lighter"></div>
+                                <div class="color__swatch shade__grape--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__pumpkin">
+                                <div class="color__heading">
+                                    <h3>Pumpkin</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#E0832E</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__pumpkin--darkest"></div>
+                                <div class="color__swatch shade__pumpkin--darker"></div>
+                                <div class="color__swatch shade__pumpkin--lighter"></div>
+                                <div class="color__swatch shade__pumpkin--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__ocean">
+                                <div class="color__heading">
+                                    <h3>Ocean</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#3BAECC</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__ocean--darkest"></div>
+                                <div class="color__swatch shade__ocean--darker"></div>
+                                <div class="color__swatch shade__ocean--lighter"></div>
+                                <div class="color__swatch shade__ocean--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__asparagus">
+                                <div class="color__heading">
+                                    <h3>Asparagus</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#A4CC44</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__asparagus--darkest"></div>
+                                <div class="color__swatch shade__asparagus--darker"></div>
+                                <div class="color__swatch shade__asparagus--lighter"></div>
+                                <div class="color__swatch shade__asparagus--lightest"></div>
+                            </div>
+                        </div>
+                        <div class="color">
+                            <div class="color__base shade__mint">
+                                <div class="color__heading">
+                                    <h3>Mint Light</h3>
+                                </div>
+                                <div class="color__swatch">
+                                    <p>#3BC297</p>
+                                </div>
+                            </div>
+                            <div class="color__variants">
+                                <div class="color__swatch shade__mint--darkest"></div>
+                                <div class="color__swatch shade__mint--darker"></div>
+                                <div class="color__swatch shade__mint--lighter"></div>
+                                <div class="color__swatch shade__mint--lightest"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="category">
+                        <hr>
+                        <h1 class="category__heading">Typography</h1>
+                        <table>
+                            <colgroup span="5"></colgroup>
+                            <tr>
+                                <td><h1>Heading 1</h1></td>
+                                <td>h1</td>
+                                <td>Oswald</td>
+                                <td>light</td>
+                                <td>28/34px</td>
+                            </tr>
+                            <tr>
+                                <td><h2>Heading 2</h2></td>
+                                <td>h2</td>
+                                <td>Oswald</td>
+                                <td>light</td>
+                                <td>24/26px</td>
+                            </tr>
+                            <tr>
+                                <td><h3>Heading 3</h3></td>
+                                <td>h3</td>
+                                <td>Open Sans</td>
+                                <td>Semibold</td>
+                                <td>20/22px</td>
+                            </tr>
+                            <tr>
+                                <td><h4>Heading 4</h4></td>
+                                <td>h4</td>
+                                <td>Open Sans</td>
+                                <td>Semibold</td>
+                                <td>17/18px</td>
+                            </tr>
+                            <tr>
+                                <td><h5>Heading 5</h5></td>
+                                <td>h5</td>
+                                <td>Open Sans</td>
+                                <td>Semibold</td>
+                                <td>16/16px</td>
+                            </tr>
+                            <tr>
+                                <td><h6>Heading 6</h6></td>
+                                <td>h6</td>
+                                <td>Open Sans</td>
+                                <td>Semibold</td>
+                                <td>14/14px</td>
+                            </tr>
+                            <tr>
+                                <td>Content</td>
+                                <td>p</td>
+                                <td>Open Sans</td>
+                                <td>Regular</td>
+                                <td>16px</td>
+                            </tr>
+                            <tr>
+                                <td>Content-small</td>
+                                <td>p</td>
+                                <td>Open Sans</td>
+                                <td>Regular</td>
+                                <td>14px</td>
+                            </tr>
+                            <tr>
+                                <td>Content-extra-small</td>
+                                <td>p</td>
+                                <td>Open Sans</td>
+                                <td>Regular</td>
+                                <td>11px</td>
+                            </tr>
+                        </table>
+                        <a href="/" class="willow-button">View component library</a>
+                    </section>
+                    <section class="category">
+                        <hr>
+                        <h1 class="category__heading">Iconography</h1>                
+                        <div class="section">
+                            <h2 class="section__heading">Selecting Icons</h2>
+                            <p class="section__description">When selecting icons, stick with silhouettes. Do not choose icons that are composed of outlines (iOS styled) or silhouettes knocked out of basic shapes.</p>
+                            
+                            <section class="willow-summary">
+                                <h1 class="willow-summary__heading">Examples</h1>
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img class="example__image" src="images/outline-head_icon.png" alt="">
+                                                <img class="example__image" src="images/check.svg" alt="">
+                                                <p class="example__label">Silhouette</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/circle-head_logo.png" alt="">
+                                                <img src="images/x_icon.svg" alt="">
+                                                <p>Outlines</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/round-head_icon.svg" alt="">
+                                                <img src="images/x_icon.svg" alt="">
+                                                <p>Outlines</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="willow-summary">
+                                <h1 class="willow-summary__heading">Outline Exceptions</h1>
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/clock_icon.png" alt="">
+                                                <p>Time</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/presentation_icon.png" alt="">
+                                                <p>Presentation</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/papers_icon.png" alt="">
+                                                <p>Documents</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="section">
+                            <h2 class="section__heading">Labeling</h2>
+                            <p class="section__description">Choose an icon that is most directly associated to the label you are attaching it to.</p>
 
-                            </div>
-                            <div class="color__swatch shade__steel--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__steel--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__steel--lightest">
-                                
-                            </div>
+                            <section class="willow-summary">
+                                <!--<h1 class="willow-summary__heading">Examples</h1>-->
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/outline-head_icon.png" alt="">
+                                                <img src="images/check.svg" alt="">Profile
+                                                <img src="images/x_icon.svg" alt="">ID
+                                                <img src="images/x_icon.svg" alt="">Security
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/card-id_icon.png" alt="">
+                                                <img src="images/x_icon.svg" alt="">Profile
+                                                <img src="images/check.svg" alt="">ID
+                                                <img src="images/x_icon.svg" alt="">Security
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/thumbprint.png" alt="">
+                                                <img src="images/x_icon.svg" alt="">Profile
+                                                <img src="images/x_icon.svg" alt="">ID
+                                                <img src="images/check.svg" alt="">Security
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                                        
                         </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__slate">
-                            <div class="color__heading">
-                                <h6>Slate</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#5B7183</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__slate--darkest">
+                        <div class="section">
+                            <h2 class="section__heading">Contours</h2>
+                            <p class="section__description">Because our brand is heavily influenced by a rectangular grid, keep icon edges as sharp as possible. Slight rounding is acceptable when it more accurately portrays the real-world object it represents.</p>
 
-                            </div>
-                            <div class="color__swatch shade__slate--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__slate--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__slate--lightest">
-                                
-                            </div>
+                            <section class="willow-summary">
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/camera1_icon.png" alt="">
+                                                <img src="images/check.svg" alt="">
+                                                <p>No rounding</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/camera2_icon.png" alt="">
+                                                <img src="images/check.svg" alt="">
+                                                <p>Skeuomorphic rounding</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/camera3_icon.png" alt="">
+                                                <img src="images/x_icon.svg" alt="">
+                                                <p>Global rounding</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                    </div>
-                    <div class="color">
-                        <h3>Accent</h3>
-                        <div class="color__base shade__tangerine">
-                            <div class="color__heading">
-                                <h6>Tangerine</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#7F2725</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__tangerine--darkest">
+                        <div class="section">
+                            <h2 class="section__heading">Perspective</h2>
+                            <p class="section__description">Keep icons flat and stay away from isometric, or angled, perspectivies.</p>
 
-                            </div>
-                            <div class="color__swatch shade__tangerine--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__tangerine--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__tangerine--lightest">
-                                
-                            </div>
+                            <section class="willow-summary">
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/front-house__icon.png" alt="">
+                                                <img src="images/check.svg" alt="">
+                                                <p>Front-facing</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/side-house__icon.png" alt="">
+                                                <img src="images/x_icon.svg" alt="">
+                                                <p>Isometric</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__grape">
-                            <div class="color__heading">
-                                <h6>Grape</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#5F3A6C</p>
-                            </div>
+                        <div class="section">
+                            <h2 class="section__heading">Level of Detail</h3>
+                            <p class="section__description">Icons should try to be as simplistic as possible. Look for icons that are just detailed enough to clearly convey their message.</p>
+                            
+                            <section class="willow-summary">
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/face_1.svg" alt="">
+                                                </div>
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/face_2.svg" alt="">
+                                                </div>
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/face_3.svg" alt="">
+                                                </div>
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/check.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/face_4.png" alt="">
+                                                </div>
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/face_5.svg" alt="">
+                                                </div>
+                                                <div class="timeline__icon">
+                                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline__range">
+                                        <img class="timeline__arrow" src="images/long-arrow_icon.png" alt="">
+                                        <div class="timeline__left">
+                                            <p>Too abstract</p>
+                                        </div>
+                                        <div class="timeline__right">
+                                            <p>Too realistic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__grape--darkest">
+                        <div class="section">
+                            <h2 class="section__heading">Scaling Complexity</h2>
+                            <p class="section__description">Increase icon complexity as size increases.</p>
+                            
+                            <section class="willow-summary">
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/scale-person.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/scale-house.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/scale-paper.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="section">
+                            <h2 class="section__heading">Color Categories</h2>
+                            <p class="section__description">Keep colors to a minimum.</p>
 
-                            </div>
-                            <div class="color__swatch shade__grape--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__grape--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__grape--lightest">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__pumpkin">
-                            <div class="color__heading">
-                                <h6>Pumpkin</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#E0832E</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__pumpkin--darkest">
-
-                            </div>
-                            <div class="color__swatch shade__pumpkin--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__pumpkin--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__pumpkin--lightest">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__ocean">
-                            <div class="color__heading">
-                                <h6>Ocean</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#3BAECC</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__ocean--darkest">
-
-                            </div>
-                            <div class="color__swatch shade__ocean--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__ocean--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__ocean--lightest">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__asparagus">
-                            <div class="color__heading">
-                                <h6>Asparagus</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#A4CC44</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__asparagus--darkest">
-
-                            </div>
-                            <div class="color__swatch shade__asparagus--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__asparagus--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__asparagus--lightest">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color">
-                        <div class="color__base shade__mint">
-                            <div class="color__heading">
-                                <h6>Mint Light</h6>
-                            </div>
-                            <div class="color__swatch">
-                                <p>#3BC297</p>
-                            </div>
-                        </div>
-                        <div class="color__variants">
-                            <div class="color__swatch shade__mint--darkest">
-
-                            </div>
-                            <div class="color__swatch shade__mint--darker">
-                                
-                            </div>
-                            <div class="color__swatch shade__mint--lighter">
-                                
-                            </div>
-                            <div class="color__swatch shade__mint--lightest">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="">
-                    <hr>
-                    <h1>Typography</h1>
-                    <table>
-                        <colgroup span="5"></colgroup>
-                        <tr>
-                            <td><h1>Heading 1</h1></td>
-                            <td>h1</td>
-                            <td>Oswald</td>
-                            <td>light</td>
-                            <td>28/34px</td>
-                        </tr>
-                        <tr>
-                            <td><h2>Heading 2</h2></td>
-                            <td>h2</td>
-                            <td>Oswald</td>
-                            <td>light</td>
-                            <td>24/26px</td>
-                        </tr>
-                        <tr>
-                            <td><h3>Heading 3</h3></td>
-                            <td>h3</td>
-                            <td>Open Sans</td>
-                            <td>Semibold</td>
-                            <td>20/22px</td>
-                        </tr>
-                        <tr>
-                            <td><h4>Heading 4</h4></td>
-                            <td>h4</td>
-                            <td>Open Sans</td>
-                            <td>Semibold</td>
-                            <td>17/18px</td>
-                        </tr>
-                        <tr>
-                            <td><h5>Heading 5</h5></td>
-                            <td>h5</td>
-                            <td>Open Sans</td>
-                            <td>Semibold</td>
-                            <td>16/16px</td>
-                        </tr>
-                        <tr>
-                            <td><h6>Heading 6</h6></td>
-                            <td>h6</td>
-                            <td>Open Sans</td>
-                            <td>Semibold</td>
-                            <td>14/14px</td>
-                        </tr>
-                        <tr>
-                            <td>Content</td>
-                            <td>p</td>
-                            <td>Open Sans</td>
-                            <td>Regular</td>
-                            <td>16px</td>
-                        </tr>
-                        <tr>
-                            <td>Content-small</td>
-                            <td>p</td>
-                            <td>Open Sans</td>
-                            <td>Regular</td>
-                            <td>14px</td>
-                        </tr>
-                        <tr>
-                            <td>Content-extra-small</td>
-                            <td>p</td>
-                            <td>Open Sans</td>
-                            <td>Regular</td>
-                            <td>11px</td>
-                        </tr>
-                    </table>
-                    <a href="/" class="willow-button">View component library</a>
-                </section>
-                <section class="">
-                    <hr>
-                    <h1>Iconography</h1>
-                    <h3>Selecting Icons</h3>
-                    <p>When selecting icons, stick with silhouettes. Do not choose icons that are composed of outlines (iOS styled) or silhouettes knocked out of basic shapes.</p>
-                    <div class="subsection">
-                        <div class="icons">
-                            <div class="icon">
-                                <img src="images/outline-head_icon.png" alt="">
-                                <img src="images/check.svg" alt="">
-                                <p>Silhouette</p>
-                            </div>
-                            <div class="icon">
-                                <img src="images/circle-head_logo.png" alt="">
-                                <img src="images/x_icon.svg" alt="">
-                                <p>Outlines</p>
-                            </div>
-                            <div class="icon">
-                                <img src="images/round-head_icon.svg" alt="">
-                                <img src="images/x_icon.svg" alt="">
-                                <p>Outlines</p>
-                            </div>
-                            <h3>Outline Exceptions</h3>
-                            <div class="icon">
-                                <img src="images/clock_icon.png" alt="">
-                                <p>Time</p>
-                            </div>
-                            <div class="icon">
-                                <img src="images/presentation_icon.png" alt="">
-                                <p>Presentation</p>
-                            </div>
-                            <div class="icon">
-                                <img src="images/papers_icon.png" alt="">
-                                <p>Documents</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Labeling</h3>
-                        <p>Choose an icon that is most directly associated to the label you are attaching it to.</p>
-                        <div class="label__example">
-                            <img src="images/outline-head_icon.png" alt="">
-                            <img src="images/check.svg" alt="">Profile
-                            <img src="images/x_icon.svg" alt="">ID
-                            <img src="images/x_icon.svg" alt="">Security
-                        </div>
-                        <div class="label__example">
-                            <img src="images/card-id_icon.png" alt="">
-                            <img src="images/x_icon.svg" alt="">Profile
-                            <img src="images/check.svg" alt="">ID
-                            <img src="images/x_icon.svg" alt="">Security
-                        </div>
-                        <div class="label__example">
-                            <img src="images/thumbprint.png" alt="">
-                            <img src="images/x_icon.svg" alt="">Profile
-                            <img src="images/x_icon.svg" alt="">ID
-                            <img src="images/check.svg" alt="">Security
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Contours</h3>
-                        <p>Because our brand is heavily influenced by a rectangular grid, keep icon edges as sharp as possible. Slight rounding is acceptable when it more accurately portrays the real-world object it represents.</p>
-                        <div class="contour__example">
-                            <img src="images/camera1_icon.png" alt="">
-                            <img src="images/check.svg" alt="">
-                            <p>No rounding</p>
-                        </div>
-                        <div class="contour__example">
-                            <img src="images/camera2_icon.png" alt="">
-                            <img src="images/check.svg" alt="">
-                            <p>Skeuomorphic rounding</p>
-                        </div>
-                        <div class="contour__example">
-                            <img src="images/camera3_icon.png" alt="">
-                            <img src="images/x_icon.svg" alt="">
-                            <p>Global rounding</p>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Perspective</h3>
-                        <p>Keep icons flat and stay away from isometric, or angled, perspectivies.</p>
-                        <div class="perspective__example">
-                            <img src="images/front-house__icon.png" alt="">
-                            <img src="images/check.svg" alt="">
-                            <p>Front-facing</p>
-                        </div>
-                        <div class="perspective__example">
-                            <img src="images/side-house__icon.png" alt="">
-                            <img src="images/x_icon.svg" alt="">
-                            <p>Isometric</p>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Level of Detail</h3>
-                        <p>Icons should try to be as simplistic as possible. Look for icons that are just detailed enough to clearly convey their message.</p>
-                        <div class="timeline">
-                            <div class="timeline__icons">
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/face_1.svg" alt="">
+                            <section class="willow-summary">
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/lock.png" alt="">
+                                                <p>Interface</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/comments.png" alt="">
+                                                <p>Content</p>
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="example">
+                                                <img src="images/paperbin.png" alt="">
+                                                <p>Supplemental</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
-                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="category">
+                        <hr>
+                        <h1 class="category__heading">Photography</h1>
+                        <p class="category__description">The main imagery should represent the warmth and adventure of living, through active and engaging scences that are bright and personal.</p>
+                        <p class="category__description">These photos should properly reflect the demographics and diversity of Colonial Life's employees and policyholders while taking care to accurately reflect the content.</p>
+                        <div class="photo-group">
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group3__1.png" alt="">
                             </div>
-                            <div class="timeline__icons">
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/face_2.svg" alt="">
-                                </div>
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
-                                </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group3__2.png" alt="">
                             </div>
-                            <div class="timeline__icons">
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/face_3.svg" alt="">
-                                </div>
-                                <div class="timeline__icon">
-                                    
-                                </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group3__3.png" alt="">
                             </div>
-                            <div class="timeline__icons">
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/face_4.png" alt="">
-                                </div>
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
-                                </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group3__4.png" alt="">
                             </div>
-                            <div class="timeline__icons">
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/face_5.svg" alt="">
-                                </div>
-                                <div class="timeline__icon">
-                                    <img class="timeline__image" src="images/x_icon.svg" alt="">
-                                </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group3__5.png" alt="">
                             </div>
-                            <div class="timeline__range">
-                                <div class="timeline__left">
-                                    <p>Too abstract</p>
-                                </div>
-                                <div class="timeline__right">
-                                    <p>Too realistic</p>
-                                </div>
+                        </div>
+                        <h3>Supplemental Photography</h3>
+                        <p>Not all content calls for photos of people. However "objective" imagery should match the style of the core lifestyle photography.</p>
+                        <div class="photo-group">
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group4__1.png" alt="">
                             </div>
-                            <img class="timeline__arrow" src="images/long-arrow_icon.png" alt="">
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group4__2.png" alt="">
+                            </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group4__3.png" alt="">
+                            </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group4__4.png" alt="">
+                            </div>
+                            <div class="photo-group__item">
+                                <img class="photo-group__image" src="images/photo-group4__5.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Scaling Complexity</h3>
-                        <p>Increase icon complexity as size increases.</p>
-                        <div class="div">
-                            <img src="images/scale-person.png" alt="">
-                            <img src="images/scale-house.png" alt="">
-                            <img src="images/scale-paper.png" alt="">
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h3>Color Categories</h3>
-                        <p>Keep colors to a minimum.</p>
-                        <div class="">
-                            <img src="images/lock.png" alt="">
-                            <p>Interface</p>
-                            <img src="images/comments.png" alt="">
-                            <p>Content</p>
-                            <img src="images/paperbin.png" alt="">
-                            <p>Supplemental</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="">
-                    <hr>
-                    <h1>Photography</h1>
-                    <p>The main imagery should represent the warmth and adventure of living, through active and engaging scences that are bright and personal.</p>
-                    <p>These photos should properly reflect the demographics and diversity of Colonial Life's employees and policyholders while taking care to accurately reflect the content.</p>
-                    <div class="photo-group">
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group3__1.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group3__2.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group3__3.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group3__4.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group3__5.png" alt="">
-                        </div>
-                    </div>
-                    <h3>Supplemental Photography</h3>
-                    <p>Not all content calls for photos of people. However "objective" imagery should match the style of the core lifestyle photography.</p>
-                    <div class="photo-group">
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group4__1.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group4__2.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group4__3.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group4__4.png" alt="">
-                        </div>
-                        <div class="photo-group__item">
-                            <img class="photo-group__image" src="images/photo-group4__5.png" alt="">
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </main>
             </div>
         </div>
-        <footer class="willow-page-footer" role="contentinfo">
-            <div class="willow-page-footer__branding">
-                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="../images/logo-one-color.svg" alt=""></a>
-            </div>
-            <div class="willow-page-footer__navigation">
-                <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                    <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
-                    <ul class="willow-footer-nav__list">
-                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a></li>
-                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="web.html" aria-label="">Web</a></li>
-                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="print.html" aria-label="">Print</a></li>
-                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="voicetone.html" aria-label="">Tone + Voice</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <small class="willow-page-footer__copyright">©2017 Colonial Life & Accident Insurance Company. All rights reserved. Colonial Life is a registered trademark and marketing brand of Colonial Life & Accident Insurance Company.</small>
-        </footer>
+        <div class="willow-layout__row">
+			<div class="willow-layout__column--12">
+                <footer class="willow-page-footer" role="contentinfo">
+                    <div class="willow-page-footer__branding">
+                        <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="../images/logo-one-color.svg" alt=""></a>
+                    </div>
+                    <div class="willow-page-footer__navigation">
+                        <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
+                            <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                            <ul class="willow-footer-nav__list">
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="web.html" aria-label="">Web</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="print.html" aria-label="">Print</a></li>
+                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="voicetone.html" aria-label="">Tone + Voice</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <small class="willow-page-footer__copyright">©2017 Colonial Life & Accident Insurance Company. All rights reserved. Colonial Life is a registered trademark and marketing brand of Colonial Life & Accident Insurance Company.</small>
+                </footer>
+			</div>
+        </div>
     </div>
     <script src="scripts/site.min.js"></script>
 </body>
