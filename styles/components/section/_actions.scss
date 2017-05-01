@@ -1,0 +1,10 @@
+@mixin base() {
+    margin: 0;
+    padding: 0;
+
+}
+
+&__actions {
+    @include base;
+
+}

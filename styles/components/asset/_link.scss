@@ -1,0 +1,12 @@
+@mixin base() {
+    border: 1px solid #DEE5EB;
+    border-radius: 3px;
+    display: inline-block;
+    padding: space(2);
+}
+
+&__link {
+    @include base;
+
+
+}
