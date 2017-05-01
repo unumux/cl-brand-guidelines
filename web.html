@@ -28,7 +28,7 @@
                                 <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
                                 <ul class="willow-primary-nav__list">
                                     <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
-                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="web.html">Web</a></li>
+                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="web.html">Web</a></li>
                                     <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="print.html">Print</a></li>
                                     <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="voicetone.html">Voice + Tone</a></li>
                                 </ul>
@@ -41,6 +41,7 @@
         <div class="willow-layout__row">
 			<div class="willow-layout__column--12">
                 <section class="willow-banner" role="region">
+                    <img src="images/web-icon.svg" alt="">
                     <h1 class="willow-banner__heading">Web Brand Guidelines</h1>
                     <div class="willow-banner__content">
                         <div class="willow-styling-context">
@@ -76,16 +77,20 @@
                         <div class="section">
                             <h2 class="section__heading">Two Color Logo</h2>
                             <p class="section__description">No other color combination may be used.</p>
-                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life blue logo">
-                            <caption>Steel Blue / Slate</caption>
+                            <div class="section__content">
+                                <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life blue logo">
+                                <caption>Steel Blue / Slate</caption>
+                            </div>
                             <a href="/" class="willow-button">Get two color logos <img src="images/downloadarrowDark.svg"></a>
                         </div>
                         <div class="section">
                             <h2 class="section__heading">Single Color Logos</h2>
-                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
-                            <caption>Steel Blue</caption>
-                            <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
-                            <caption>Black</caption>
+                            <div class="section__content">
+                                <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
+                                <caption>Steel Blue</caption>
+                                <img class="shade__white" src="images/Logo-blue-pewter.svg" alt="Colonial Life logo">
+                                <caption>Black</caption>
+                            </div>
                             <a href="/" class="willow-button">Get one color logos <img src="images/downloadarrowDark.svg"></a>
                         </div>
                         <div class="section">
@@ -116,28 +121,111 @@
                         <div class="section">
                             <h2 class="section__heading">Improper Logo Color Usage</h2>
                             <div class="section__content">
-                                <img src="images/beige-no-logo.svg" alt="">
-                                <img src="images/red-no-logo.svg" alt="">
-                                <img src="images/purple-no-logo.svg" alt="">
-                                <img src="images/lime-no-logo.svg" alt="">
-                                <img src="images/teal-no-logo.svg" alt="">
-                                <img src="images/orange-no-logo.svg" alt="">
-                                <img src="images/blue-no-logo.svg" alt="">
-                                <img src="images/yellow-no-logo.svg" alt="">
-
-                                <img src="images/lightgray-no-white.svg" alt="">
-                                <img src="images/darkgray-no-white.svg" alt="">
-                                <img src="images/moss-no-white.svg" alt="">
-                                <img src="images/happygreen-no-white.svg" alt="">
-                                <img src="images/beige-no-white.svg" alt="">
-                                <img src="images/red-no-white.svg" alt="">
-                                <img src="images/purple-no-white.svg" alt="">
-                                <img src="images/orange-no-white.svg" alt="">
-                                <img src="images/blue-no-white.svg" alt="">
-                                <img src="images/lime-no-white.svg" alt="">
-                                <img src="images/teal-no-white.svg" alt="">
-                                <img src="images/yellow-no-white.svg" alt="">
-                            
+                                <div class="willow-summary__content">
+                                    <div class="willow-grid">
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/beige-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/red-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/purple-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/lime-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/teal-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/orange-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/blue-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/yellow-no-logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/lightgray-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/darkgray-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/moss-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/happygreen-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/beige-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/red-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/purple-no-white.svg" alt="">
+                                            </div> 
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/orange-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/blue-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/lime-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/teal-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="willow-grid__item">
+                                            <div class="sample">
+                                                <img class="sample__color" src="images/yellow-no-white.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -419,23 +507,17 @@
                                             <div class="example">
                                                 <img src="images/outline-head_icon.png" alt="">
                                                 <img src="images/check.svg" alt="">Profile
-                                                <img src="images/x_icon.svg" alt="">ID
-                                                <img src="images/x_icon.svg" alt="">Security
                                             </div>
                                         </div>
                                         <div class="willow-grid__item">
                                             <div class="example">
                                                 <img src="images/card-id_icon.png" alt="">
-                                                <img src="images/x_icon.svg" alt="">Profile
                                                 <img src="images/check.svg" alt="">ID
-                                                <img src="images/x_icon.svg" alt="">Security
                                             </div>
                                         </div>
                                         <div class="willow-grid__item">
                                             <div class="example">
                                                 <img src="images/thumbprint.png" alt="">
-                                                <img src="images/x_icon.svg" alt="">Profile
-                                                <img src="images/x_icon.svg" alt="">ID
                                                 <img src="images/check.svg" alt="">Security
                                             </div>
                                         </div>
