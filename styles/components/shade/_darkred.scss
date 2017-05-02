@@ -2,7 +2,7 @@
     background-color: #7F2725;
 }
 
-&__darkred {
+&--darkred {
     @include base;
 
     &--print {
