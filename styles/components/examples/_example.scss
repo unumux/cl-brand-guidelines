@@ -1,0 +1,18 @@
+@mixin base {
+    align-items: center;
+    display: flex;
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(small)) {
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+&__example {
+    @include base;
+
+}
