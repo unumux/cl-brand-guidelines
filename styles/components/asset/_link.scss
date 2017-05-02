@@ -8,5 +8,10 @@
 &__link {
     @include base;
 
+    &--dark {
+        @include base;
 
+        background-color: #265B80;
+        border: none;
+    }
 }
