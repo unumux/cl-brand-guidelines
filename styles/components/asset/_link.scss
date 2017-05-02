@@ -14,4 +14,11 @@
         background-color: #265B80;
         border: none;
     }
+
+    &--light {
+        @include base;
+
+        background-color: #E0DDCE;
+        border: none;
+    }
 }
