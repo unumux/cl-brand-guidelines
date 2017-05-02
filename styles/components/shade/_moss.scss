@@ -1,13 +1,45 @@
 @mixin base() {
-    background-color: #688465;
-    border-radius: .2rem;
-    height: 10rem;
-    padding: 3rem;
-    width: 37rem;
+    background-color: #547552;
 }
 
 &--moss {
     @include base;
+
+    &-dark-4 {
+        background-color: #2B4527;
+    }
+
+    &-dark-3 {
+        background-color: #365232;
+    }
+
+    &-dark-2 {
+        background-color: #405F3C;
+    }
+
+    &-dark-1 {
+        background-color: #4B6C48;
+    }
+
+    &-light-1 {
+        background-color: #9DB89A;
+        color: black;
+    }
+
+    &-light-2 {
+        background-color: #B2C6AE;
+        color: black;
+    }
+
+    &-light-3 {
+        background-color: #C6D5C3;
+        color: black;
+    }
+
+    &-light-4 {
+        background-color: #DCE7DA;
+        color: black;
+    }
 
     &--print {
         @include base;

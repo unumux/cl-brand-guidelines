@@ -1,36 +1,44 @@
 @mixin base() {
     background-color: #5F3A6C;
-    border-radius: .2rem;
-    height: 10rem;
-    padding: 3rem;
-    width: 37rem;
 }
 
 &--grape {
     @include base;
 
-    &--darker {
-        background-color: #4A2657;
-        height: 5rem;
-        width: 37rem;
+    &-dark-4 {
+        background-color: #043A4F;
     }
 
-    &--darkest {
-        background-color: #3B1947;
-        height: 5rem;
-        width: 37rem;
+    &-dark-3 {
+        background-color: #0F425A;
     }
 
-    &--lighter {
-        background-color: #BBA7C2;
-        height: 5rem;
-        width: 37rem;
+    &-dark-2 {
+        background-color: #184B66;
     }
 
-    &--lightest {
-        background-color: #DED1E3;
-        height: 5rem;
-        width: 37rem;
+    &-dark-1 {
+        background-color: #215372;
+    }
+
+    &-light-1 {
+        background-color: #AAC3D3;
+        color: black;
+    }
+
+    &-light-2 {
+        background-color: #BFD1DD;
+        color: black;
+    }
+
+    &-light-3 {
+        background-color: #D4E1E9;
+        color: black;
+    }
+
+    &-light-4 {
+        background-color: #e3edf3;
+        color: black;
     }
 
     &--print {

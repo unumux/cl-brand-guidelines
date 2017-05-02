@@ -1,7 +1,8 @@
 @mixin base() {
+    margin-bottom: space(4);
 
     @media screen and (min-width: breakpoint(medium)) {
-        padding-right: space(2);
+        margin-right: space(3);
     }
 }
 
