@@ -1,5 +1,4 @@
 @mixin base() {
-    color: #fff;
 
     @media screen and (min-width: breakpoint(medium)) {
         padding-right: space(2);
