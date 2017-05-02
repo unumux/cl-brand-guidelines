@@ -5,8 +5,6 @@
     }
 }
 
-.color {
+&__color {
     @include base;
-
-    @import "base";
 }

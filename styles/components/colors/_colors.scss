@@ -1,4 +1,5 @@
 @mixin base() {
+    color: white;
 
     @media screen and (min-width: breakpoint(medium)) {
         display: flex;
@@ -8,4 +9,10 @@
 
 .colors {
     @include base;
+
+    @import "color";
+    @import "base";
+    @import "heading";
+    @import "description";
+    @import "swatch";
 }

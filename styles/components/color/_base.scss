@@ -1,8 +1,0 @@
-@mixin base() {
-    margin-bottom: space(.25);
-}
-
-&__base {
-    @include base;
-    
-}
