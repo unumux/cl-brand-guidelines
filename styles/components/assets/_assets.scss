@@ -1,0 +1,22 @@
+@mixin base() {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media screen and (min-width: breakpoint(small)) {
+        align-content: flex-start;
+        justify-content: space-between;      
+    }
+}
+
+.assets {
+    @include base;
+
+    @import "asset";
+    @import "caption";
+    @import "image";
+    @import "link";
+    
+}
