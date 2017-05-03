@@ -1,9 +1,41 @@
 @mixin base() {
-    background-color: #7F2725;
+    background-color: #7E2828;
 }
 
 &--darkred {
     @include base;
+
+    &-dark-4 {
+        background-color: #4B1414;
+    }
+
+    &-dark-3 {
+        background-color: #581A19;
+    }
+
+    &-dark-2 {
+        background-color: #661E1D;
+    }
+
+    &-dark-1 {
+        background-color: #742121;
+    }
+
+    &-light-1 {
+        background-color: #8B3535;
+    }
+
+    &-light-2 {
+        background-color: #933A3A;
+    }
+
+    &-light-3 {
+        background-color: #9C403F;
+    }
+
+    &-light-4 {
+        background-color: #A44544;
+    }
 
     &--print {
         @include base;

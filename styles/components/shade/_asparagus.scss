@@ -1,36 +1,40 @@
 @mixin base() {
-    background-color: #A4CC44;
-    border-radius: .2rem;
-    height: 10rem;
-    padding: 3rem;
-    width: 37rem;
+    background-color: #A5CA4F;
 }
 
 &--asparagus {
     @include base;
 
-    &--darker {
-        background-color: #85B907;
-        height: 5rem;
-        width: 37rem;
+    &-dark-4 {
+        background-color: #84A930;
     }
 
-    &--darkest {
-        background-color: #7AAD00;
-        height: 5rem;
-        width: 37rem;
+    &-dark-3 {
+        background-color: #8DB237;
     }
 
-    &--lighter {
-        background-color: #ADD54B;
-        height: 5rem;
-        width: 37rem;
+    &-dark-2 {
+        background-color: #95BB3E;
     }
 
-    &--lightest {
-        background-color: #B9E64E;
-        height: 5rem;
-        width: 37rem;
+    &-dark-1 {
+        background-color: #9EC447;
+    }
+
+    &-light-1 {
+        background-color: #B5DA5F;
+    }
+
+    &-light-2 {
+        background-color: #C1E371;
+    }
+
+    &-light-3 {
+        background-color: #CEED85;
+    }
+
+    &-light-4 {
+        background-color: #DAF698;
     }
 
     &--print {
