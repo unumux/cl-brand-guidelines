@@ -4,4 +4,11 @@
 
 &__image {
     @include base;
+
+    &--global {
+        @include base;
+
+        width: 80rem;;
+        
+    }
 }
