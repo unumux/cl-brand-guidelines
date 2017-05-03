@@ -1,6 +1,5 @@
 @mixin base() {
     background-color:#E0DDCE;
-    color: black;
 }
 
 &--sand {
@@ -8,68 +7,34 @@
 
     &-dark-4 {
         background-color: #A69F7F;
-        color: black;
     }
 
     &-dark-3 {
         background-color: #B6AF93;
-        color: black;
     }
 
     &-dark-2 {
         background-color: #C6C0A8;
-        color: black;
     }
 
     &-dark-1 {
         background-color: #D6D0BD;
-        color: black;
     }
 
     &-light-1 {
         background-color: #E4E1D5;
-        color: black;
     }
 
     &-light-2 {
         background-color: #E9E6DC;
-        color: black;
     }
 
     &-light-3 {
         background-color: #EEECE4;
-        color: black;
     }
 
     &-light-4 {
         background-color: #F3F2EC;
-        color: black;
-    }
-
-    &--darkest {
-        @include base;
-
-        border-radius: 0.4rem;
-        height: 6.5rem;
-        width: 7rem;
-    }
-
-    &--lighter {
-        @include base;
-
-        border-radius: 0.4rem;
-        height: 6.5rem;
-        opacity: 0.5;
-        width: 7rem;
-    }
-
-    &--lightest {
-        @include base;
-
-        border-radius: 0.4rem;
-        height: 6.5rem;
-        opacity: 0.3;
-        width: 7rem;
     }
 
     &--print {

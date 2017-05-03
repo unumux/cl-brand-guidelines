@@ -1,8 +1,8 @@
 @mixin base() {
     margin-bottom: space(4);
 
-    @media screen and (min-width: breakpoint(medium)) {
-        margin-right: space(3);
+    @media screen and (min-width: breakpoint(small)) {
+        flex-basis: 48%;
     }
 }
 

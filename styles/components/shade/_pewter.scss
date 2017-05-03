@@ -1,6 +1,5 @@
 @mixin base() {
     background-color: #8F9EA9;
-    color: black;
 }
 
 &--pewter {
@@ -24,22 +23,18 @@
 
     &-light-1 {
         background-color: #96A4AF;
-        color: black;
     }
 
     &-light-2 {
         background-color: #ADB7BF;
-        color: black;
     }
 
     &-light-3 {
         background-color: #C6CDD2;
-        color: black;
     }
 
     &-light-4 {
         background-color: #E1E4E6;
-        color: black;
     }
 
     &--print {

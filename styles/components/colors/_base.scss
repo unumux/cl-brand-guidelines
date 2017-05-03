@@ -7,9 +7,14 @@
     margin-bottom: space(0.25);
     padding-left: space(1);
     padding-right: space(1);
-    width: 37rem;
 }
 
 &__base {
     @include base;
+
+    &--inverse-text {
+        @include base;
+
+        color: $component-body-text-color-inverse;
+    }
 }

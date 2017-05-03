@@ -1,6 +1,5 @@
 @mixin base() {
     background-color: #7AB061;
-    color: black;
 }
 
 &--leaf {
@@ -24,22 +23,18 @@
 
     &-light-1 {
         background-color: #86BD6F;
-        color: black;
     }
 
     &-light-2 {
         background-color: #A9D290;
-        color: black;
     }
 
     &-light-3 {
         background-color: #C1DEB0;
-        color: black;
     }
 
     &-light-4 {
         background-color: #DAECD4;
-        color: black;
     }
 
     &--print {
