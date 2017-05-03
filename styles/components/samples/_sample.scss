@@ -1,0 +1,14 @@
+@mixin base() {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        //flex-basis: 25%;
+    }
+}
+
+
+&__sample {
+    @include base;
+}

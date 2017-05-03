@@ -2,13 +2,21 @@
     margin-bottom: space(2);
     flex-grow: 0; 
     flex-shrink: 0;
-    flex-basis: auto;
-    //text-align: center;
+    flex-basis: 48%;
+    max-width: 325px;
+    min-width: 280px;
+
+    @media screen and (min-width: breakpoint(small)) {
+        justify-content: space-around;
+
+    }
 
     @media screen and (min-width: breakpoint(medium)) {
-           flex-basis: 50%;
-           //text-align: left;
+ 
+
     }
+
+
 }
 
 &__asset {
