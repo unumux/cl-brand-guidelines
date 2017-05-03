@@ -13,11 +13,23 @@
     @import "example";
 
     &__image{
-        height: space(7);
+        height: space(5);
     }
 
     &__icon {
         margin-left: space(1);
         margin-right: space(1);
+    }
+
+    &__label {
+        margin-left: space(1);
+        margin-right: space(1);
+        max-width: 50px;
+        white-space: inherit;
+    }
+
+    &__test {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
