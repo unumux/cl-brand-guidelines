@@ -1,8 +1,9 @@
 @mixin base() {
-    margin-bottom: space(.25);
+    max-width: 150px;
+
 }
 
-&__base {
+&__image {
     @include base;
     
 }

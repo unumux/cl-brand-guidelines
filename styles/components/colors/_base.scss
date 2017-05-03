@@ -1,0 +1,15 @@
+@mixin base() {
+    align-items: center;
+    border-radius: .2rem;
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    margin-bottom: space(1);
+    padding-left: space(1);
+    padding-right: space(1);
+    width: 37rem;
+}
+
+&__base {
+    @include base;
+}
