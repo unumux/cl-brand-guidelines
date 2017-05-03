@@ -1,8 +1,11 @@
 @mixin base() {
     border: 1px solid #DEE5EB;
     border-radius: 3px;
-    display: inline-block;
+    display: flex;
     padding: space(2);
+    min-height: 130px;
+    justify-content: center;
+    align-items: center;
 }
 
 &__link {
@@ -12,13 +15,11 @@
         @include base;
 
         background-color: #265B80;
-        border: none;
     }
 
     &--light {
         @include base;
 
         background-color: #E0DDCE;
-        border: none;
     }
 }
