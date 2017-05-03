@@ -1,6 +1,8 @@
 @mixin base {
     align-items: center;
     display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
     margin-bottom: space(2);
 
     @media screen and (min-width: breakpoint(small)) {
@@ -8,11 +10,28 @@
         flex-grow: 1;
         flex-shrink: 0;
         margin-bottom: 0;
+        max-width: initial;
     }
     
 }
 
 &__example {
     @include base;
+
+    &--column {
+        @include base;
+
+        display: flex;
+        flex-basis: 0;
+        flex-direction: column;
+    }
+
+    &--test1 {
+        @include base;
+        
+        display: flex;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
 
 }
