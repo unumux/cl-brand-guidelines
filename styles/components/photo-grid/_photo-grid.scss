@@ -1,0 +1,9 @@
+@mixin base() {
+    @include make-grid(3, space(1));
+}
+
+.photo-grid {
+    @include base;
+
+    @import "item";
+}
