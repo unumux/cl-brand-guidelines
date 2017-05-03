@@ -1,0 +1,15 @@
+@mixin base() {
+
+    
+}
+
+&__item {
+    align-items: center;
+    display: flex;
+    margin-right: space(2);
+    margin-bottom : space(2);
+
+    @media screen and (min-width: breakpoint(medium)) {
+        margin-bottom: 0;
+    }
+}

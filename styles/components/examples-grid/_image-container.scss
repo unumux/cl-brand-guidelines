@@ -1,0 +1,12 @@
+@mixin base() {
+
+}
+
+&__image-container {
+    flex-basis: 40%;
+    margin-right: space(2);
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-basis: 20%;
+    }
+}
