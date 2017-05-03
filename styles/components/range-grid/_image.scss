@@ -1,0 +1,14 @@
+@mixin base() {
+    margin-bottom: space(2);
+}
+
+&__image {
+    @include base;
+
+    &--global {
+        @include base;
+
+        width: 80rem;;
+        
+    }
+}

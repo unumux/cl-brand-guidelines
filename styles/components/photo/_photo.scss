@@ -1,7 +1,7 @@
 @mixin base() {
-    margin-bottom: 0;
+    width: 100%;    
 }
 
-&__heading {
+.photo {
     @include base;
 }

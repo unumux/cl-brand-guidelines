@@ -1,7 +1,7 @@
 @mixin base() {
-    margin-bottom: 0;
+
 }
 
-&__heading {
+&__description {
     @include base;
 }

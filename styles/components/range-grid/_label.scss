@@ -1,0 +1,11 @@
+@mixin base() {
+}
+
+&__label {
+    @include base;
+
+    &--global {
+        
+    }
+
+}
