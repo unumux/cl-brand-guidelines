@@ -1,9 +1,10 @@
 @mixin base() {
-    color: white;
+    color: $component-body-text-color;
 
-    @media screen and (min-width: breakpoint(medium)) {
+    @media screen and (min-width: breakpoint(small)) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -14,5 +15,6 @@
     @import "base";
     @import "heading";
     @import "description";
+    @import "variants";
     @import "swatch";
 }
