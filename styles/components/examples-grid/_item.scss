@@ -1,15 +1,15 @@
 @mixin base() {
-
-    
-}
-
-&__item {
     align-items: center;
     display: flex;
-    margin-right: space(2);
+    // margin-right: space(2);
     margin-bottom : space(2);
 
     @media screen and (min-width: breakpoint(medium)) {
         margin-bottom: 0;
     }
+}
+
+&__item {
+    @include base;
+    @include make-grid-item(4);
 }

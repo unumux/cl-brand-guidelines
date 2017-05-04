@@ -1,29 +1,65 @@
-@mixin make-grid-item($max-columns, $gutters) {
-    flex-basis: calc(100% - #{$gutters});
-
-    @media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(medium)) {
-       flex-basis: calc((#{100 / ($max-columns - 2)})% - #{$gutters});
-    }
-
-    @media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(large)) {
-       flex-basis: calc((#{100 / ($max-columns - 1)})% - #{$gutters});
-    }
-
-    @media screen and (min-width: breakpoint(large)) {
-        flex-basis: calc((#{100 / $max-columns})% - #{$gutters});
-    }
-}
-
-@mixin make-grid($max-columns: 4, $gutters: space(2)) {
+@mixin make-grid() {
     margin-bottom: space(2);
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
 
-    @media screen and (min-width: breakpoint(small)) {
+    @media screen and (min-width: breakpoint(medium)) {
         align-items: stretch;
         display: flex;
         flex-wrap: wrap;
     }
-
-    &__item {
-        @include make-grid-item($max-columns, $gutters);
-    }
 }
+
+@mixin make-grid-item($column-span: 12){
+    
+        @media screen and (min-width: breakpoint(medium)) {
+            $width: $column-span*(100%/12);
+            flex-basis: $width;
+            flex-grow: 0;
+            flex-shrink: 0;
+            // padding-left: space(1);
+            padding-right: space(2);
+            width: $width;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+}
+
+// First approach to grid mixins
+// @mixin make-grid-item($max-columns, $gutters) {
+//     flex-basis: calc(100% - #{$gutters});
+
+//     @media screen and (min-width: breakpoint(small)) and (max-width: breakpoint(medium)) {
+//        flex-basis: calc((#{100 / ($max-columns - 2)})% - #{$gutters});
+//     }
+
+//     @media screen and (min-width: breakpoint(medium)) and (max-width: breakpoint(large)) {
+//        flex-basis: calc((#{100 / ($max-columns - 1)})% - #{$gutters});
+//     }
+
+//     @media screen and (min-width: breakpoint(large)) {
+//         flex-basis: calc((#{100 / $max-columns})% - #{$gutters});
+//     }
+// }
+
+// @mixin make-grid($max-columns: 4, $gutters: space(2)) {
+//     margin-bottom: space(2);
+
+//     @media screen and (min-width: breakpoint(small)) {
+//         align-items: stretch;
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+
+//     &__item {
+//         @include make-grid-item($max-columns, $gutters);
+//     }
+// }

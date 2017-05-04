@@ -4,14 +4,15 @@
     @media screen and (min-width: breakpoint(small)) {
         flex-grow: 0;
         flex-shrink: 0;
-        margin-right: space(1);
+        // margin-right: space(1);
 
         &:last-child {
-            margin-right: 0;
+            // margin-right: 0;
         }
     }
 }
 
 &__item {
     @include base;
+    @include make-grid-item(4);
 }

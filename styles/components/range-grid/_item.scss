@@ -1,26 +1,20 @@
 @mixin base {
     display: flex;
     flex-wrap: wrap;
-    margin-right: space(6);
+    // margin-right: space(6);
 
     &:last-of-type {
         margin-right: 0;
     }
-
-    @media screen and (min-width: breakpoint(medium)) {
-        // flex-basis: auto;
-        // flex-shrink: 0;
-        // flex-wrap: nowrap;
-        // margin-bottom: 0;
-    }
-    
 }
 
 &__item {
     @include base;
+    @include make-grid-item(2);
 
     &.column {
     @include base;
+    @include make-grid-item(2);
 
         display: flex;
         flex-direction: column;

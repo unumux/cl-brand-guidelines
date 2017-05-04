@@ -1,5 +1,5 @@
 @mixin base() {
-    @include make-grid(3, space(1));
+    @include make-grid;
 }
 
 .photo-grid {

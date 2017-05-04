@@ -1,5 +1,5 @@
 @mixin base() {
-    @include make-grid(3);
+    @include make-grid;
 
 }
 
