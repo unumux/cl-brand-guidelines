@@ -1,0 +1,11 @@
+@mixin base() {
+    background-color: initial;
+    background-image: url("../images/banner-bg-pattern.png");
+    background-repeat: repeat;
+    background-size: initial;
+}
+
+.main-banner {
+    @include base;
+
+}
