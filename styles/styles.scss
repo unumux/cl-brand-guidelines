@@ -8,3 +8,20 @@ hr {
     border-style: none;
     height: 0.4rem;
 }
+
+.willow-page-header__content {
+    @include full-width;
+
+    flex-basis: 100vw;
+
+}
+
+.section__action {
+    .willow-button {
+        width: 100%;
+
+        @media screen and  (min-width: breakpoint(small)) {
+            width: initial;
+        }
+    }
+}

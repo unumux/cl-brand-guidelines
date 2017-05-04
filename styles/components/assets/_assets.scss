@@ -1,12 +1,11 @@
 @mixin base() {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     max-width: 680px;
     width: 100%;
 
     @media screen and (min-width: breakpoint(small)) {
-        align-content: flex-start;
+        // align-content: flex-start;
         justify-content: space-between;      
     }
 }

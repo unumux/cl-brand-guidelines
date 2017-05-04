@@ -8,4 +8,5 @@
 &__actions {
     @include base;
 
+    @import "action";
 }

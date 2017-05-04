@@ -12,15 +12,18 @@
 	<div class="willow-layout">
 		<div class="willow-layout__row--remove-margin-bottom">
 			<div class="willow-layout__column--12">
-				<header class="willow-page-header" role="banner">
+				<div class="willow-skip-nav">
+                    <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+                </div>
+                <header class="willow-page-header" role="banner">
 					<div class="willow-page-header__branding">
 						<a class="willow-logo-link" href="/" aria-label="go to home page">
-							<img class="willow-logo-link__image" src="images/logo-one-color.svg" alt="Colonial Life logo" />
+							<img class="willow-logo-link__image" src="images/CL-logo-white.svg" alt="Colonial Life logo" />
 						</a>
 					</div>
 					<div class="willow-page-header__content-controls">
-						<a class="willow-page-header__content-open" href="#">Menu</a>
-						<a class="willow-page-header__content-close" href="#">Close</a>
+						<a class="willow-page-header__content-open" href="#">Menu<span class="willow-icon--menu"></span></a>
+						<a class="willow-page-header__content-close" href="#"><span class="willow-icon--close"></span></a>
 					</div>
 					<div class="willow-page-header__content">
 						<div class="willow-page-header__navigation">

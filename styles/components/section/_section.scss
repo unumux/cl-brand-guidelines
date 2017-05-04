@@ -1,11 +1,13 @@
 @mixin base() {
-    margin-bottom: space(2);
+    margin-bottom: space(4);
 
 }
 
 .section {
     @include base;
 
-    @import "actions";
+    @import "heading";
     @import "content";
+    @import "actions";
+    @import "action";
 }
