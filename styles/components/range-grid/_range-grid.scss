@@ -1,5 +1,4 @@
 @mixin base() {
-
 }
 
 .range-grid {
@@ -7,8 +6,17 @@
     @include make-grid;
 
     @import "item";
+    @import "column";
     @import "image";
     @import "icon";
     @import "label";
+    @import "legend";
+}
 
+.range {
+    // display: flex;
+
+    // @media screen and (min-width: breakpoint(medium)) {
+    //     display: initial;
+    // }
 }
