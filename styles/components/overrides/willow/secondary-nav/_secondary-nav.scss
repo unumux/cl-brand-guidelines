@@ -9,6 +9,7 @@
 
 .willow-secondary-nav {
     @include base;
+    margin-bottom: space(2);
 }
 
 .active {

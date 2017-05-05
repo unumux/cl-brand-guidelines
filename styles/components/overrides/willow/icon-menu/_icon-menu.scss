@@ -1,0 +1,7 @@
+@mixin base() {
+    padding-right: 0;
+}
+
+.willow-icon-menu {
+    @include base;
+}
