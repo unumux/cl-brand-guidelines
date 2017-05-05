@@ -1,0 +1,8 @@
+@mixin base() {
+    // display: flex;
+    // flex-direction: column;
+}
+
+& .column  {
+    @include base;
+}

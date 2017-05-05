@@ -10,10 +10,12 @@ hr {
 }
 
 .willow-page-header__content {
-    @include full-width;
 
-    flex-basis: 100vw;
-
+    @media screen and (max-width: breakpoint(medium)) {
+        @include full-width;
+        
+        flex-basis: 100vw;
+    }
 }
 
 .section__action {

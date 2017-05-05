@@ -1,22 +1,29 @@
 @mixin base {
-    display: flex;
-    flex-wrap: wrap;
-    // margin-right: space(6);
-
-    &:last-of-type {
-        margin-right: 0;
-    }
+    
+        
 }
 
 &__item {
-    @include base;
-    @include make-grid-item(2);
 
-    &.column {
-    @include base;
-    @include make-grid-item(2);
+    // @for $i from 1 through 12 {
+    //     &--#{$i} {
+    //         display: flex;
 
-        display: flex;
-        flex-direction: column;
+    //     }
+    // }
+
+    // @media screen and (min-width: breakpoint(medium)) {
+        @for $i from 1 through 12 {
+            &--#{$i} {
+                @include make-grid-item($i);
+
+                @media screen and (min-width: breakpoint(medium)) {
+                    &.column {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        // }
     }
 }

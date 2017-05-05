@@ -4,7 +4,7 @@
     flex-basis: calc(50% - #{$margin});
     flex-grow: 0;
     flex-shrink: 0;
-    margin-right: $margin;
+    //margin-right: $margin;
     margin-bottom: $margin;
 
     @media screen and (min-width: breakpoint(small)) {
@@ -15,7 +15,6 @@
         flex-basis: calc(25% - #{$margin});
     }
 }
-
 
 &__sample {
     @include base;

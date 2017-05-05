@@ -1,15 +1,14 @@
 @mixin base() {
-    margin-bottom: space(2);
     flex-basis: 100%;
     flex-shrink: 0;
+    margin-bottom: space(2);
     max-width: 350px;
     min-width: 280px;
 
     @media screen and (min-width: breakpoint(small)) {
-        justify-content: space-around;
         flex-basis: 48%;
+        justify-content: space-around;
     }
-
 }
 
 &__asset {

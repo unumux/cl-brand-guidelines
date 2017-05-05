@@ -5,11 +5,13 @@
     margin-bottom : space(2);
 
     @media screen and (min-width: breakpoint(medium)) {
+        @include make-grid-item(4);
+
         margin-bottom: 0;
     }
 }
 
 &__item {
     @include base;
-    @include make-grid-item(4);
+
 }
