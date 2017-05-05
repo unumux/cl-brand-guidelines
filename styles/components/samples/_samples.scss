@@ -1,14 +1,7 @@
 @mixin base() {
     display: flex;
     flex-flow: row wrap;
-
-    @media screen and (min-width: breakpoint(medium)) {
-        // justify-content: space-between;
-    }
-
-    @media screen and (min-width: breakpoint(large)) {
-        // justify-content: space-around;
-    }
+    justify-content: space-between;
 }
 
 .samples {
