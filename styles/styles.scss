@@ -9,13 +9,6 @@ hr {
     height: 0.4rem;
 }
 
-.willow-page-header__content {
-    @include full-width;
-
-    flex-basis: 100vw;
-
-}
-
 .section__action {
     .willow-button {
         width: 100%;
@@ -37,4 +30,14 @@ hr {
         margin-bottom: 0;
 
     }
+}
+
+.active {
+    background-color: #ebeff3;
+    border-left: 4px solid #a4cc44;
+}
+
+.fixed {
+    position: fixed;
+    top: 24px;
 }

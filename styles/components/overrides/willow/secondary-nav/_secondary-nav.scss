@@ -11,13 +11,3 @@
     @include base;
     margin-bottom: space(2);
 }
-
-.active {
-    background-color: #ebeff3;
-    border-left: 4px solid #a4cc44;
-}
-
-.fixed {
-    position: fixed;
-    top: 24px;
-}
