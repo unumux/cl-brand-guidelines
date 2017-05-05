@@ -1,0 +1,19 @@
+@mixin base() {
+
+}
+
+.opacity {
+    @include base;
+
+    &--2 {
+        opacity: .2;
+    }
+
+    &--3 {
+        opacity: .3;
+    }
+
+    &--5 {
+        opacity: .5;
+    }
+}
