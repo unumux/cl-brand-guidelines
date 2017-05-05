@@ -1,0 +1,22 @@
+@mixin base() {
+    width: 100%;
+    max-width: 100%;
+
+    @media screen and (min-width: breakpoint(small)) {
+        max-width: 268px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 24px;
+}
+
+.willow-secondary-nav {
+    @include base;
+}
+
+.active {
+    background-color: #ebeff3;
+    border-left: 4px solid #a4cc44;
+}
