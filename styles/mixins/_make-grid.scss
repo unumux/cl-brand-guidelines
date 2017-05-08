@@ -21,10 +21,10 @@
     width: $width;
 
     &:first-of-type {
-        margin-left: space(-2);
+        margin-left: space(-1);
     }
 
     &:last-of-type {
-        margin-right: space(-2);
+        margin-right: space(-1);
     }
 }
