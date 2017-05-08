@@ -8,7 +8,6 @@
     "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "stickyfill": "^1.1.1"
+    "jquery": "^3.2.1"
   }
 }
