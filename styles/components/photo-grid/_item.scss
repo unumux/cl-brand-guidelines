@@ -2,6 +2,8 @@
     margin-bottom: space(2);
 
     @media screen and (min-width: breakpoint(small)) {
+        @include make-grid-item(3);
+
         flex-grow: 0;
         flex-shrink: 0;
         // margin-right: space(1);
@@ -14,5 +16,4 @@
 
 &__item {
     @include base;
-    @include make-grid-item(4);
 }
