@@ -1,12 +1,13 @@
 @mixin base {
     $width: 2*(100%/12);
 
-    flex-basis: $width;
+    flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     width: $width;
 
     &.column {
+        align-items: center;
         display: flex;
         flex-direction: column;
     }
@@ -18,7 +19,7 @@
         width: 100%;
 
         @media screen and (min-width: breakpoint(small)) {
-            flex-basis: 10*(100%/12);
+            flex-basis: auto;
             width: 10*(100%/12);
         }
     }
@@ -26,7 +27,7 @@
     @media screen and (min-width: breakpoint(small)) {
         $width: 2*(100%/12);
 
-        flex-basis: $width;
+        flex-basis: auto;
         flex-grow: 0;
         flex-shrink: 0;
         padding-left: space(2);

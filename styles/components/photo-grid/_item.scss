@@ -6,7 +6,7 @@
             @media screen and (min-width: breakpoint(medium)) {
                 $width: $i*(100%/12);
 
-                flex-basis: $width;
+                flex-basis: auto;
                 flex-grow: 0;
                 flex-shrink: 1;
                 margin-bottom: 0;
