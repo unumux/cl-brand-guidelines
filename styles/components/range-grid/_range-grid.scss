@@ -1,22 +1,21 @@
 @mixin base() {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: space-between;
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(small)) {
+        justify-content: flex-start;
+    }
 }
 
 .range-grid {
     @include base;
-    @include make-grid;
 
     @import "item";
-    @import "column";
     @import "image";
     @import "icon";
-    @import "label";
     @import "legend";
-}
-
-.range {
-    // display: flex;
-
-    // @media screen and (min-width: breakpoint(medium)) {
-    //     display: initial;
-    // }
 }

@@ -1,29 +1,48 @@
 @mixin base {
+    $width: 2*(100%/12);
+
+    flex-basis: $width;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: $width;
+
+    &.column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &.legend-content {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (min-width: breakpoint(small)) {
+            flex-basis: 10*(100%/12);
+            width: 10*(100%/12);
+        }
+    }
     
-        
-}
+    @media screen and (min-width: breakpoint(small)) {
+        $width: 2*(100%/12);
+
+        flex-basis: $width;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-left: space(2);
+        padding-right: space(2);
+        width: $width;
+
+        &:first-of-type {
+            margin-left: space(-2);
+        }
+
+        &:last-of-type {
+            margin-right: space(-2);
+        }
+    }   
+} 
 
 &__item {
-
-    // @for $i from 1 through 12 {
-    //     &--#{$i} {
-    //         display: flex;
-
-    //     }
-    // }
-
-    // @media screen and (min-width: breakpoint(medium)) {
-        @for $i from 1 through 12 {
-            &--#{$i} {
-                @include make-grid-item($i);
-
-                @media screen and (min-width: breakpoint(medium)) {
-                    &.column {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-            }
-        // }
-    }
+    @include base;
 }

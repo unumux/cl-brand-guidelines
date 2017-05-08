@@ -2,6 +2,9 @@
 // Include scripts using Browserify by doing:
 import $ from "jquery";
 
+// import "Stickyfill";
+// $(".willow-secondary-nav").Stickyfill();
+
 var header = document.querySelector(".willow-page-header");
 var open = document.querySelector(".willow-page-header__content-open");
 var close = document.querySelector(".willow-page-header__content-close");
@@ -14,7 +17,6 @@ close.addEventListener("click", function (e) {
     header.setAttribute("data-content-open", "false");
 });
 
-
 //Sticky Nav so far:
 const secondaryNav = document.querySelector(".willow-secondary-nav");
 const pageHeader = document.querySelector(".willow-page-header");
@@ -22,24 +24,6 @@ const willowBanner = document.querySelector(".willow-banner");
 
 var computedHeight = pageHeader.offsetHeight + willowBanner.offsetHeight;
 var computedWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);
-
-function fixed() {
-    if (computedWidth >= 1230) {
-        if (document.body.scrollTop >= computedHeight) {
-            secondaryNav.classList.add("fixed"); 
-        } else {
-            secondaryNav.classList.remove("fixed");
-        }
-    } else {
-        secondaryNav.classList.remove("fixed");
-    }
-}
-
-window.onresize = function() {
-    computedWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);
-    computedHeight = pageHeader.offsetHeight + willowBanner.offsetHeight;
-    fixed();
-}
 
 $(function(){
     let scrolled = true;
@@ -57,7 +41,6 @@ $(function(){
     function animationFrame() {
         if(scrolled) {
             updateActiveLink();
-            fixed();
             scrolled = false;
         }
         requestAnimationFrame(animationFrame);
@@ -66,7 +49,8 @@ $(function(){
 
     function updateActiveLink() {
         let categoryHeadingPositions = getHeadingPositions();
-        const scrollTop = $("body").scrollTop();
+        //Changed body to window for FF
+        const scrollTop = $(window).scrollTop();
     
         const currentSection = categoryHeadingPositions.reduce(function(prev, curr, index) {
             if(scrollTop >= curr) {
@@ -89,7 +73,8 @@ $(function(){
         const targetHash = e.target.href.match(/.*#(.*)/)[1]; 
         const targetSection = $(`#${targetHash}`);
         
-        $("body").animate({
+        //Add HTML for FF scroll animation
+        $("body, html").animate({
             scrollTop:  targetSection.offset().top
         }, function() {
             window.location.hash = targetHash;

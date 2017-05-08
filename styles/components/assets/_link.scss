@@ -1,11 +1,11 @@
 @mixin base() {
-    border: 1px solid #DEE5EB;
+    align-items: center;
+    border: 1px solid $theme-action-3;
     border-radius: 3px;
     display: flex;
-    padding: space(2);
-    min-height: 130px;
     justify-content: center;
-    align-items: center;
+    min-height: 130px;
+    padding: space(2);
 }
 
 &__link {
