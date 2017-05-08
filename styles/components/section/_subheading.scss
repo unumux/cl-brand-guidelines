@@ -1,8 +1,7 @@
 @mixin base() {
-
+    display: none;
 }
 
-&__icon {
+&__subheading {
     @include base;
-
 }
