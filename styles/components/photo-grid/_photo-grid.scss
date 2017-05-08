@@ -5,5 +5,9 @@
     @include base;
     @include make-grid;
 
+    @media screen and (min-width: breakpoint(medium)) {
+        margin-bottom: space(1);
+    }
+
     @import "item";
 }

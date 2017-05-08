@@ -1,22 +1,21 @@
 @mixin base() {
-
-    @media screen and (min-width: breakpoint(medium)) {
-        @include make-grid-item(4);
-        padding-left: space(1);
-        padding-right: space(1);
-
-
-        @for $i from 1 through 12 {
-            &--#{$i} {
-                $width: #{$i}*(100%/12);
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            margin-bottom: space(2);
+            
+            @media screen and (min-width: breakpoint(medium)) {
+                $width: $i*(100%/12);
 
                 flex-basis: $width;
-                padding-left: space(2);
-                padding-right: space(2);
+                flex-grow: 0;
+                flex-shrink: 1;
+                margin-bottom: 0;
+                padding-left: space(0.5);
+                padding-right: space(0.5);
                 width: $width;
 
                 &:first-of-type {
-                    margin-left: space(-2);
+                    margin-left: space(-0.5);
                 }
 
                 &:last-of-type {
