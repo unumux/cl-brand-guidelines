@@ -1,15 +1,19 @@
 @mixin base() {
+    margin-bottom: space(2);
     max-width: 100%;
+    top: space(2);
     width: 100%;
 
     @media screen and (min-width: breakpoint(small)) {
         max-width: 268px;
     }
+
+    @media screen and (min-width: breakpoint(large)) {
+        position: sticky;
+    }
 }
 
 .willow-secondary-nav {
     @include base;
-    margin-bottom: space(2);
-    position: sticky;
-    top: space(2);
+
 }

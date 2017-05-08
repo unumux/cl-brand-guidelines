@@ -2,8 +2,11 @@
 // Include scripts using Browserify by doing:
 import $ from "jquery";
 
-// import "Stickyfill";
-// $(".willow-secondary-nav").Stickyfill();
+window.$ = window.jQuery = $;
+
+require("./Stickyfill");
+
+$(".willow-secondary-nav").Stickyfill();
 
 var header = document.querySelector(".willow-page-header");
 var open = document.querySelector(".willow-page-header__content-open");
