@@ -4,7 +4,8 @@
     border-radius: 3px;
     display: flex;
     justify-content: center;
-    min-height: 130px;
+    //Min height doesnt work in IE11, has to have a height set to align-items in flex
+    height: 140px;
     padding: space(2);
 }
 

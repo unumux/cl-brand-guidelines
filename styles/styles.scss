@@ -3,15 +3,6 @@
 @import "mixins/mixins";
 @import "components/components";
 
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
 hr {
     background-color: #DEE5EB;
     border-style: none;
