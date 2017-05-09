@@ -28,10 +28,6 @@ hr {
     }
 }
 
-.willow-layout {
-    outline: 1px solid mediumaquamarine;
-}
-
 .color {
     h3 {
         @include set-text-style($text-style-heading-5);
