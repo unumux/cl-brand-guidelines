@@ -53,6 +53,8 @@ $(function(){
             scrollTop:  targetSection.offset().top
         }, function() {
             window.location.hash = targetHash;
+            categoryLinks.removeClass("active");
+            $(e.target).addClass("active");            
         });
     });
 });
