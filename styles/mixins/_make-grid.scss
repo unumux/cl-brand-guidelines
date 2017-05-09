@@ -13,7 +13,7 @@
     $width: $column-span*(100%/12);
     @include base;
 
-    flex-basis: $width;
+    flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     padding-left: space(2);
