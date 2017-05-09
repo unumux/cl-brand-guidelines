@@ -1,25 +1,24 @@
 @mixin base() {
-    flex-basis: 40%;
+    flex-basis: auto;
     margin-right: space(2);
+    min-width: 30%;
     
+    @media screen and (min-width: breakpoint(medium)) {
+        min-width: 0;
+        text-align: center;
+    }
 }
 
 &__image-container {
     @include base;
 
-    @media screen and (min-width: breakpoint(medium)) {
-        flex-basis: 20%;
-    }
 
     &--large {
-        flex-basis: 40%;
-        margin-right: space(2);
-
+        @include base;
     }
 
     &--medium {
-        flex-basis: 30%;
-        margin-right: space(2);
+        @include base;
     }
 }
     
