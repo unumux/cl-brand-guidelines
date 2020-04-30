@@ -12,6 +12,6 @@
     "imagemin": "imagemin images-source/* --out-dir=images --plugin=pngquant --plugin=svgo"
   },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.5.0"
   }
 }
